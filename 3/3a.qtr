@@ -1,0 +1,5896 @@
+<!DOCTYPE qtractorSession>
+<session version="Qtractor 0.8.0" name="3a">
+ <properties>
+  <directory>/home/golubovsky/qtractor</directory>
+  <description>MIDI file import "3.mid" on Jan 30 2017 22:41:56.
+Audio file import "3a-export-1.wav" on Jan 31 2017 23:53:08.
+</description>
+  <sample-rate>44100</sample-rate>
+  <tempo>80</tempo>
+  <ticks-per-beat>960</ticks-per-beat>
+  <beats-per-bar>4</beats-per-bar>
+  <beat-divisor>2</beat-divisor>
+ </properties>
+ <state>
+  <loop-start>0</loop-start>
+  <loop-end>0</loop-end>
+  <punch-in>0</punch-in>
+  <punch-out>0</punch-out>
+ </state>
+ <files>
+  <audio-list>
+   <file name="3a-export-lead-1.wav">3a-export-lead-1.wav</file>
+   <file name="3a-export-pad-1.wav">3a-export-pad-1.wav</file>
+   <file name="3a-export-1.wav">3a-export-1.wav</file>
+   <file name="3a-export-lead.wav">3a-export-lead.wav</file>
+   <file name="3a-export-drum-1.wav">3a-export-drum-1.wav</file>
+  </audio-list>
+  <midi-list>
+   <file name="3.mid">../Documents/MuseScore2/Scores/3.mid</file>
+   <file name="3a-3_Drums-1.mid">3a-3_Drums-1.mid</file>
+  </midi-list>
+ </files>
+ <devices>
+  <audio-engine>
+   <audio-control>
+    <transport-mode>duplex</transport-mode>
+    <timebase>1</timebase>
+   </audio-control>
+   <audio-bus mode="duplex" name="Master">
+    <monitor>0</monitor>
+    <channels>2</channels>
+    <auto-connect>1</auto-connect>
+    <input-gain>1</input-gain>
+    <input-panning>0</input-panning>
+    <input-controllers/>
+    <input-plugins/>
+    <input-connects>
+     <connect index="0">
+      <client>system</client>
+      <port>capture_1</port>
+     </connect>
+    </input-connects>
+    <output-gain>1.25893</output-gain>
+    <output-panning>0</output-panning>
+    <output-controllers/>
+    <output-plugins/>
+    <output-connects>
+     <connect index="0">
+      <client>system</client>
+      <port>playback_1</port>
+     </connect>
+     <connect index="1">
+      <client>system</client>
+      <port>playback_2</port>
+     </connect>
+    </output-connects>
+   </audio-bus>
+  </audio-engine>
+  <midi-engine>
+   <midi-control>
+    <mmc-mode>duplex</mmc-mode>
+    <mmc-device>127</mmc-device>
+    <spp-mode>duplex</spp-mode>
+    <clock-mode>none</clock-mode>
+   </midi-control>
+   <midi-bus mode="duplex" name="Master">
+    <monitor>0</monitor>
+    <input-gain>1</input-gain>
+    <input-panning>0</input-panning>
+    <input-controllers/>
+    <input-plugins>
+     <audio-output-bus-name></audio-output-bus-name>
+     <audio-output-bus>0</audio-output-bus>
+     <audio-output-auto-connect>1</audio-output-auto-connect>
+    </input-plugins>
+    <input-connects>
+     <connect index="0">
+      <client>128:a2jmidid</client>
+      <port>0:port</port>
+     </connect>
+    </input-connects>
+    <output-gain>1</output-gain>
+    <output-panning>0</output-panning>
+    <output-controllers/>
+    <output-plugins>
+     <bank>0</bank>
+     <program>0</program>
+     <audio-output-bus-name></audio-output-bus-name>
+     <audio-output-bus>0</audio-output-bus>
+     <audio-output-auto-connect>1</audio-output-auto-connect>
+    </output-plugins>
+    <output-connects>
+     <connect index="0">
+      <client>128:a2jmidid</client>
+      <port>0:port</port>
+     </connect>
+    </output-connects>
+    <midi-map>
+     <midi-patch channel="0">
+      <midi-bank-sel-method>0</midi-bank-sel-method>
+     </midi-patch>
+     <midi-patch channel="1">
+      <midi-bank-sel-method>0</midi-bank-sel-method>
+     </midi-patch>
+     <midi-patch channel="9">
+      <midi-program>0</midi-program>
+     </midi-patch>
+    </midi-map>
+   </midi-bus>
+   <midi-bus mode="duplex" name="Lead">
+    <monitor>0</monitor>
+    <input-gain>1</input-gain>
+    <input-panning>0</input-panning>
+    <input-controllers/>
+    <input-plugins>
+     <audio-output-bus-name></audio-output-bus-name>
+     <audio-output-bus>0</audio-output-bus>
+     <audio-output-auto-connect>1</audio-output-auto-connect>
+    </input-plugins>
+    <input-connects>
+     <connect index="0">
+      <client>128:a2jmidid</client>
+      <port>0:port</port>
+     </connect>
+    </input-connects>
+    <output-gain>1</output-gain>
+    <output-panning>0.04</output-panning>
+    <output-controllers/>
+    <output-plugins>
+     <bank>0</bank>
+     <program>0</program>
+     <plugin type="LV2">
+      <filename>http://zynaddsubfx.sourceforge.net</filename>
+      <index>0</index>
+      <label>ZynAddSubFX</label>
+      <preset></preset>
+      <direct-access-param>-1</direct-access-param>
+      <activated>1</activated>
+      <configs>
+       <config key="urn:distrho:state">
+&lt;?xml version="1.0f" encoding="UTF-8"?>
+&lt;!DOCTYPE ZynAddSubFX-data>
+&lt;ZynAddSubFX-data version-major="2" version-minor="5"
+version-revision="4" ZynAddSubFX-author="Nasca Octavian Paul">
+&lt;INFORMATION />
+&lt;BASE_PARAMETERS>
+&lt;par name="max_midi_parts" value="16" />
+&lt;par name="max_kit_items_per_instrument" value="16" />
+&lt;par name="max_system_effects" value="4" />
+&lt;par name="max_insertion_effects" value="8" />
+&lt;par name="max_instrument_effects" value="3" />
+&lt;par name="max_addsynth_voices" value="8" />
+&lt;/BASE_PARAMETERS>
+&lt;MASTER>
+&lt;par name="volume" value="104" />
+&lt;par name="key_shift" value="64" />
+&lt;par_bool name="nrpn_receive" value="yes" />
+&lt;MICROTONAL>
+&lt;string name="name">12tET&lt;/string>
+&lt;string name="comment">Equal Temperament 12 notes per octave&lt;/string>
+&lt;par_bool name="invert_up_down" value="no" />
+&lt;par name="invert_up_down_center" value="60" />
+&lt;par_bool name="enabled" value="no" />
+&lt;par name="global_fine_detune" value="64" />
+&lt;par name="a_note" value="69" />
+&lt;par_real name="a_freq" value="440" exact_value="0x43DC0000" />
+&lt;/MICROTONAL>
+&lt;PART id="0">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="volume" value="96" />
+&lt;par name="panning" value="64" />
+&lt;par name="min_key" value="0" />
+&lt;par name="max_key" value="127" />
+&lt;par name="key_shift" value="52" />
+&lt;par name="rcv_chn" value="0" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;par name="velocity_offset" value="64" />
+&lt;par_bool name="note_on" value="yes" />
+&lt;par_bool name="poly_mode" value="yes" />
+&lt;par name="legato_mode" value="0" />
+&lt;par name="key_limit" value="15" />
+&lt;INSTRUMENT>
+&lt;INFO>
+&lt;string name="name">Soft Piano 1&lt;/string>
+&lt;string name="author">&lt;/string>
+&lt;string name="comments">&lt;/string>
+&lt;par name="type" value="0" />
+&lt;/INFO>
+&lt;INSTRUMENT_KIT>
+&lt;par name="kit_mode" value="0" />
+&lt;par_bool name="drum_mode" value="no" />
+&lt;INSTRUMENT_KIT_ITEM id="0">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">Soft Piano 1&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="0" />
+&lt;par name="max_key" value="127" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="no" />
+&lt;par_bool name="sub_enabled" value="yes" />
+&lt;SUB_SYNTH_PARAMETERS>
+&lt;par name="num_stages" value="2" />
+&lt;par name="harmonic_mag_type" value="2" />
+&lt;par name="start" value="2" />
+&lt;HARMONICS>
+&lt;HARMONIC id="0">
+&lt;par name="mag" value="127" />
+&lt;par name="relbw" value="40" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="86" />
+&lt;par name="relbw" value="40" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="2">
+&lt;par name="mag" value="53" />
+&lt;par name="relbw" value="63" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par_bool name="stereo" value="yes" />
+&lt;par name="volume" value="108" />
+&lt;par name="panning" value="64" />
+&lt;par name="velocity_sensing" value="90" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="59" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="8" />
+&lt;par name="D_dt" value="99" />
+&lt;par name="R_dt" value="62" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="0" />
+&lt;par name="R_val" value="64" />
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="1024" />
+&lt;par name="overtone_spread_type" value="0" />
+&lt;par name="overtone_spread_par1" value="0" />
+&lt;par name="overtone_spread_par2" value="0" />
+&lt;par name="overtone_spread_par3" value="0" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="54" />
+&lt;par name="bandwidth_scale" value="64" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="band_width_envelope_enabled" value="yes" />
+&lt;BANDWIDTH_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="3" />
+&lt;par name="env_sustain" value="1" />
+&lt;par name="env_stretch" value="64" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="33" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="93" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/BANDWIDTH_ENVELOPE>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par_bool name="enabled" value="no" />
+&lt;/FILTER_PARAMETERS>
+&lt;/SUB_SYNTH_PARAMETERS>
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="1">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="2">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="3">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="4">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="8">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="9">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="10">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="11">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="12">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="13">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="14">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="15">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;/INSTRUMENT_KIT>
+&lt;INSTRUMENT_EFFECTS>
+&lt;INSTRUMENT_EFFECT id="0">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;par name="route" value="0" />
+&lt;par_bool name="bypass" value="no" />
+&lt;/INSTRUMENT_EFFECT>
+&lt;INSTRUMENT_EFFECT id="1">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;par name="route" value="0" />
+&lt;par_bool name="bypass" value="no" />
+&lt;/INSTRUMENT_EFFECT>
+&lt;INSTRUMENT_EFFECT id="2">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;par name="route" value="0" />
+&lt;par_bool name="bypass" value="no" />
+&lt;/INSTRUMENT_EFFECT>
+&lt;/INSTRUMENT_EFFECTS>
+&lt;/INSTRUMENT>
+&lt;CONTROLLER>
+&lt;par name="pitchwheel_bendrange" value="200" />
+&lt;par name="pitchwheel_bendrange_down" value="0" />
+&lt;par_bool name="pitchwheel_split" value="no" />
+&lt;par_bool name="expression_receive" value="yes" />
+&lt;par name="panning_depth" value="64" />
+&lt;par name="filter_cutoff_depth" value="64" />
+&lt;par name="filter_q_depth" value="64" />
+&lt;par name="bandwidth_depth" value="64" />
+&lt;par name="mod_wheel_depth" value="80" />
+&lt;par_bool name="mod_wheel_exponential" value="no" />
+&lt;par_bool name="fm_amp_receive" value="yes" />
+&lt;par_bool name="volume_receive" value="yes" />
+&lt;par_bool name="sustain_receive" value="yes" />
+&lt;par_bool name="portamento_receive" value="yes" />
+&lt;par name="portamento_time" value="64" />
+&lt;par name="portamento_pitchthresh" value="3" />
+&lt;par name="portamento_pitchthreshtype" value="1" />
+&lt;par name="portamento_portamento" value="0" />
+&lt;par name="portamento_updowntimestretch" value="64" />
+&lt;par name="portamento_proportional" value="0" />
+&lt;par name="portamento_proprate" value="80" />
+&lt;par name="portamento_propdepth" value="90" />
+&lt;par name="resonance_center_depth" value="64" />
+&lt;par name="resonance_bandwidth_depth" value="64" />
+&lt;/CONTROLLER>
+&lt;/PART>
+&lt;PART id="1">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="2">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="3">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="4">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="8">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="9">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="10">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="11">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="12">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="13">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="14">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="15">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;SYSTEM_EFFECTS>
+&lt;SYSTEM_EFFECT id="0">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;VOLUME id="0">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="1">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="2">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="3">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="4">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="5">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="6">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="7">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="8">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="9">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="10">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="11">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="12">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="13">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="14">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="15">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;SENDTO id="1">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;SENDTO id="2">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;SENDTO id="3">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;/SYSTEM_EFFECT>
+&lt;SYSTEM_EFFECT id="1">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;VOLUME id="0">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="1">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="2">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="3">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="4">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="5">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="6">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="7">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="8">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="9">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="10">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="11">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="12">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="13">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="14">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="15">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;SENDTO id="2">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;SENDTO id="3">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;/SYSTEM_EFFECT>
+&lt;SYSTEM_EFFECT id="2">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;VOLUME id="0">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="1">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="2">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="3">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="4">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="5">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="6">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="7">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="8">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="9">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="10">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="11">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="12">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="13">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="14">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="15">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;SENDTO id="3">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;/SYSTEM_EFFECT>
+&lt;SYSTEM_EFFECT id="3">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;VOLUME id="0">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="1">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="2">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="3">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="4">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="5">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="6">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="7">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="8">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="9">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="10">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="11">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="12">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="13">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="14">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="15">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;/SYSTEM_EFFECT>
+&lt;/SYSTEM_EFFECTS>
+&lt;INSERTION_EFFECTS>
+&lt;INSERTION_EFFECT id="0">
+&lt;par name="part" value="0" />
+&lt;EFFECT>
+&lt;par name="type" value="7" />
+&lt;par name="preset" value="0" />
+&lt;EFFECT_PARAMETERS>
+&lt;par_no id="0">
+&lt;par name="par" value="67" />
+&lt;/par_no>
+&lt;par_no id="10">
+&lt;par name="par" value="2" />
+&lt;/par_no>
+&lt;par_no id="11">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="12">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="16">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="17">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="18">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="21">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="22">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="23">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="26">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="27">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="28">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="31">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="32">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="33">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="36">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="37">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="38">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="41">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="42">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="43">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="46">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="47">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="48">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;/EFFECT_PARAMETERS>
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="1">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="2">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="3">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="4">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="5">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="6">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="7">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;/INSERTION_EFFECTS>
+&lt;/MASTER>
+&lt;/ZynAddSubFX-data>
+</config>
+      </configs>
+      <params/>
+      <controllers/>
+      <editor-pos>137,524</editor-pos>
+      <form-pos>0,0</form-pos>
+     </plugin>
+     <audio-output-bus-name></audio-output-bus-name>
+     <audio-output-bus>0</audio-output-bus>
+     <audio-output-auto-connect>1</audio-output-auto-connect>
+    </output-plugins>
+    <output-connects>
+     <connect index="0">
+      <client>128:a2jmidid</client>
+      <port>0:port</port>
+     </connect>
+    </output-connects>
+    <midi-map>
+     <midi-patch channel="0">
+      <midi-bank-sel-method>0</midi-bank-sel-method>
+      <midi-program>0</midi-program>
+     </midi-patch>
+     <midi-patch channel="1">
+      <midi-bank-sel-method>0</midi-bank-sel-method>
+     </midi-patch>
+     <midi-patch channel="9">
+      <midi-bank-sel-method>0</midi-bank-sel-method>
+     </midi-patch>
+    </midi-map>
+   </midi-bus>
+   <midi-bus mode="duplex" name="Pad">
+    <monitor>0</monitor>
+    <input-gain>1</input-gain>
+    <input-panning>0</input-panning>
+    <input-controllers/>
+    <input-plugins>
+     <audio-output-bus-name></audio-output-bus-name>
+     <audio-output-bus>0</audio-output-bus>
+     <audio-output-auto-connect>1</audio-output-auto-connect>
+    </input-plugins>
+    <input-connects>
+     <connect index="0">
+      <client>128:a2jmidid</client>
+      <port>0:port</port>
+     </connect>
+    </input-connects>
+    <output-gain>1</output-gain>
+    <output-panning>0</output-panning>
+    <output-controllers/>
+    <output-plugins>
+     <bank>0</bank>
+     <program>90</program>
+     <plugin type="LV2">
+      <filename>http://zynaddsubfx.sourceforge.net</filename>
+      <index>0</index>
+      <label>ZynAddSubFX</label>
+      <preset></preset>
+      <direct-access-param>-1</direct-access-param>
+      <activated>1</activated>
+      <configs>
+       <config key="urn:distrho:state">
+&lt;?xml version="1.0f" encoding="UTF-8"?>
+&lt;!DOCTYPE ZynAddSubFX-data>
+&lt;ZynAddSubFX-data version-major="2" version-minor="5"
+version-revision="4" ZynAddSubFX-author="Nasca Octavian Paul">
+&lt;INFORMATION />
+&lt;BASE_PARAMETERS>
+&lt;par name="max_midi_parts" value="16" />
+&lt;par name="max_kit_items_per_instrument" value="16" />
+&lt;par name="max_system_effects" value="4" />
+&lt;par name="max_insertion_effects" value="8" />
+&lt;par name="max_instrument_effects" value="3" />
+&lt;par name="max_addsynth_voices" value="8" />
+&lt;/BASE_PARAMETERS>
+&lt;MASTER>
+&lt;par name="volume" value="48" />
+&lt;par name="key_shift" value="64" />
+&lt;par_bool name="nrpn_receive" value="yes" />
+&lt;MICROTONAL>
+&lt;string name="name">12tET&lt;/string>
+&lt;string name="comment">Equal Temperament 12 notes per octave&lt;/string>
+&lt;par_bool name="invert_up_down" value="no" />
+&lt;par name="invert_up_down_center" value="60" />
+&lt;par_bool name="enabled" value="no" />
+&lt;par name="global_fine_detune" value="64" />
+&lt;par name="a_note" value="69" />
+&lt;par_real name="a_freq" value="440" exact_value="0x43DC0000" />
+&lt;/MICROTONAL>
+&lt;PART id="0">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="1">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="volume" value="80" />
+&lt;par name="panning" value="63" />
+&lt;par name="min_key" value="55" />
+&lt;par name="max_key" value="127" />
+&lt;par name="key_shift" value="64" />
+&lt;par name="rcv_chn" value="1" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;par name="velocity_offset" value="64" />
+&lt;par_bool name="note_on" value="yes" />
+&lt;par_bool name="poly_mode" value="yes" />
+&lt;par name="legato_mode" value="0" />
+&lt;par name="key_limit" value="15" />
+&lt;INSTRUMENT>
+&lt;INFO>
+&lt;string name="name">Sweep Synth&lt;/string>
+&lt;string name="author">Will J Godfrey
+GPL V 2 or later&lt;/string>
+&lt;string name="comments">&lt;/string>
+&lt;par name="type" value="12" />
+&lt;/INFO>
+&lt;INSTRUMENT_KIT>
+&lt;par name="kit_mode" value="0" />
+&lt;par_bool name="drum_mode" value="no" />
+&lt;INSTRUMENT_KIT_ITEM id="0">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="0" />
+&lt;par name="max_key" value="127" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="yes" />
+&lt;ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="stereo" value="yes" />
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="volume" value="99" />
+&lt;par name="panning" value="64" />
+&lt;par name="velocity_sensing" value="70" />
+&lt;par name="fadein_adjustment" value="20" />
+&lt;par name="punch_strength" value="0" />
+&lt;par name="punch_time" value="60" />
+&lt;par name="punch_stretch" value="64" />
+&lt;par name="punch_velocity_sensing" value="72" />
+&lt;par name="harmonic_randomness_grouping" value="0" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="27" />
+&lt;par name="D_dt" value="40" />
+&lt;par name="R_dt" value="85" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="127" />
+&lt;par name="R_val" value="64" />
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;AMPLITUDE_LFO>
+&lt;par_real name="freq" value="0.605" exact_value="0x3F1AE148" />
+&lt;par name="intensity" value="17" />
+&lt;par name="start_phase" value="0" />
+&lt;par name="lfo_type" value="1" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="22" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="yes" />
+&lt;/AMPLITUDE_LFO>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="64" />
+&lt;FREQUENCY_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="3" />
+&lt;par name="env_sustain" value="1" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="50" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FREQUENCY_ENVELOPE>
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.656" exact_value="0x3F27EF9E" />
+&lt;par name="intensity" value="36" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par name="velocity_sensing_amplitude" value="64" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="0" />
+&lt;par name="freq" value="100" />
+&lt;par name="q" value="36" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="98" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;FILTER_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="28" />
+&lt;par name="D_dt" value="70" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="65" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FILTER_ENVELOPE>
+&lt;FILTER_LFO>
+&lt;par_real name="freq" value="0.338" exact_value="0x3EAD0E56" />
+&lt;par name="intensity" value="17" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="yes" />
+&lt;/FILTER_LFO>
+&lt;/FILTER_PARAMETERS>
+&lt;RESONANCE>
+&lt;par_bool name="enabled" value="no" />
+&lt;/RESONANCE>
+&lt;VOICE id="0">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="-1" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="4" />
+&lt;par name="base_function_par" value="51" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="0" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="2">
+&lt;par name="mag" value="89" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="8">
+&lt;par name="mag" value="76" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="34" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="5493" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="yes" />
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.534" exact_value="0x3F08B439" />
+&lt;par name="intensity" value="25" />
+&lt;par name="start_phase" value="0" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="1">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="0" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="53" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="7035" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="yes" />
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.524" exact_value="0x3F0624DD" />
+&lt;par name="intensity" value="34" />
+&lt;par name="start_phase" value="0" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="35" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="2">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="0" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="97" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="7999" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="yes" />
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.584" exact_value="0x3F158106" />
+&lt;par name="intensity" value="33" />
+&lt;par name="start_phase" value="0" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="43" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="3">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="0" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="90" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="9637" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="yes" />
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.314" exact_value="0x3EA0C49C" />
+&lt;par name="intensity" value="27" />
+&lt;par name="start_phase" value="0" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="4">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;/ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="sub_enabled" value="no" />
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="1">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="2">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="3">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="4">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="8">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="9">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="10">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="11">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="12">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="13">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="14">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="15">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;/INSTRUMENT_KIT>
+&lt;INSTRUMENT_EFFECTS>
+&lt;INSTRUMENT_EFFECT id="0">
+&lt;EFFECT>
+&lt;par name="type" value="1" />
+&lt;par name="preset" value="2" />
+&lt;EFFECT_PARAMETERS>
+&lt;par_no id="0">
+&lt;par name="par" value="40" />
+&lt;/par_no>
+&lt;par_no id="1">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="2">
+&lt;par name="par" value="69" />
+&lt;/par_no>
+&lt;par_no id="3">
+&lt;par name="par" value="24" />
+&lt;/par_no>
+&lt;par_no id="7">
+&lt;par name="par" value="127" />
+&lt;/par_no>
+&lt;par_no id="8">
+&lt;par name="par" value="75" />
+&lt;/par_no>
+&lt;par_no id="9">
+&lt;par name="par" value="78" />
+&lt;/par_no>
+&lt;par_no id="10">
+&lt;par name="par" value="1" />
+&lt;/par_no>
+&lt;par_no id="11">
+&lt;par name="par" value="85" />
+&lt;/par_no>
+&lt;/EFFECT_PARAMETERS>
+&lt;/EFFECT>
+&lt;par name="route" value="0" />
+&lt;par_bool name="bypass" value="no" />
+&lt;/INSTRUMENT_EFFECT>
+&lt;INSTRUMENT_EFFECT id="1">
+&lt;EFFECT>
+&lt;par name="type" value="8" />
+&lt;par name="preset" value="2" />
+&lt;EFFECT_PARAMETERS>
+&lt;par_no id="0">
+&lt;par name="par" value="100" />
+&lt;/par_no>
+&lt;par_no id="1">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="2">
+&lt;par name="par" value="30" />
+&lt;/par_no>
+&lt;par_no id="5">
+&lt;par name="par" value="50" />
+&lt;/par_no>
+&lt;par_no id="6">
+&lt;par name="par" value="80" />
+&lt;/par_no>
+&lt;par_no id="9">
+&lt;par name="par" value="60" />
+&lt;/par_no>
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="4" />
+&lt;par name="freq" value="64" />
+&lt;par name="q" value="64" />
+&lt;par name="stages" value="2" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;/EFFECT_PARAMETERS>
+&lt;/EFFECT>
+&lt;par name="route" value="0" />
+&lt;par_bool name="bypass" value="no" />
+&lt;/INSTRUMENT_EFFECT>
+&lt;INSTRUMENT_EFFECT id="2">
+&lt;EFFECT>
+&lt;par name="type" value="7" />
+&lt;par name="preset" value="0" />
+&lt;EFFECT_PARAMETERS>
+&lt;par_no id="0">
+&lt;par name="par" value="72" />
+&lt;/par_no>
+&lt;par_no id="10">
+&lt;par name="par" value="3" />
+&lt;/par_no>
+&lt;par_no id="11">
+&lt;par name="par" value="114" />
+&lt;/par_no>
+&lt;par_no id="12">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="13">
+&lt;par name="par" value="50" />
+&lt;/par_no>
+&lt;par_no id="16">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="17">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="18">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="21">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="22">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="23">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="26">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="27">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="28">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="31">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="32">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="33">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="36">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="37">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="38">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="41">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="42">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="43">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="46">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="47">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="48">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;/EFFECT_PARAMETERS>
+&lt;/EFFECT>
+&lt;par name="route" value="0" />
+&lt;par_bool name="bypass" value="no" />
+&lt;/INSTRUMENT_EFFECT>
+&lt;/INSTRUMENT_EFFECTS>
+&lt;/INSTRUMENT>
+&lt;CONTROLLER>
+&lt;par name="pitchwheel_bendrange" value="200" />
+&lt;par name="pitchwheel_bendrange_down" value="0" />
+&lt;par_bool name="pitchwheel_split" value="no" />
+&lt;par_bool name="expression_receive" value="yes" />
+&lt;par name="panning_depth" value="64" />
+&lt;par name="filter_cutoff_depth" value="64" />
+&lt;par name="filter_q_depth" value="64" />
+&lt;par name="bandwidth_depth" value="64" />
+&lt;par name="mod_wheel_depth" value="80" />
+&lt;par_bool name="mod_wheel_exponential" value="no" />
+&lt;par_bool name="fm_amp_receive" value="yes" />
+&lt;par_bool name="volume_receive" value="yes" />
+&lt;par_bool name="sustain_receive" value="yes" />
+&lt;par_bool name="portamento_receive" value="yes" />
+&lt;par name="portamento_time" value="64" />
+&lt;par name="portamento_pitchthresh" value="3" />
+&lt;par name="portamento_pitchthreshtype" value="1" />
+&lt;par name="portamento_portamento" value="0" />
+&lt;par name="portamento_updowntimestretch" value="64" />
+&lt;par name="portamento_proportional" value="0" />
+&lt;par name="portamento_proprate" value="80" />
+&lt;par name="portamento_propdepth" value="90" />
+&lt;par name="resonance_center_depth" value="64" />
+&lt;par name="resonance_bandwidth_depth" value="64" />
+&lt;/CONTROLLER>
+&lt;/PART>
+&lt;PART id="2">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="volume" value="127" />
+&lt;par name="panning" value="96" />
+&lt;par name="min_key" value="0" />
+&lt;par name="max_key" value="54" />
+&lt;par name="key_shift" value="76" />
+&lt;par name="rcv_chn" value="1" />
+&lt;par name="velocity_sensing" value="72" />
+&lt;par name="velocity_offset" value="64" />
+&lt;par_bool name="note_on" value="yes" />
+&lt;par_bool name="poly_mode" value="yes" />
+&lt;par name="legato_mode" value="0" />
+&lt;par name="key_limit" value="15" />
+&lt;INSTRUMENT>
+&lt;INFO>
+&lt;string name="name">Synth Organ&lt;/string>
+&lt;string name="author">&lt;/string>
+&lt;string name="comments">&lt;/string>
+&lt;par name="type" value="0" />
+&lt;/INFO>
+&lt;INSTRUMENT_KIT>
+&lt;par name="kit_mode" value="0" />
+&lt;par_bool name="drum_mode" value="no" />
+&lt;INSTRUMENT_KIT_ITEM id="0">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="0" />
+&lt;par name="max_key" value="127" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="yes" />
+&lt;ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="stereo" value="yes" />
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="volume" value="99" />
+&lt;par name="panning" value="63" />
+&lt;par name="velocity_sensing" value="100" />
+&lt;par name="fadein_adjustment" value="20" />
+&lt;par name="punch_strength" value="43" />
+&lt;par name="punch_time" value="60" />
+&lt;par name="punch_stretch" value="64" />
+&lt;par name="punch_velocity_sensing" value="72" />
+&lt;par name="harmonic_randomness_grouping" value="0" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="yes" />
+&lt;par name="env_points" value="7" />
+&lt;par name="env_sustain" value="4" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="yes" />
+&lt;par name="A_dt" value="16" />
+&lt;par name="D_dt" value="56" />
+&lt;par name="R_dt" value="32" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="127" />
+&lt;par name="R_val" value="64" />
+&lt;POINT id="0">
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;POINT id="1">
+&lt;par name="dt" value="10" />
+&lt;par name="val" value="68" />
+&lt;/POINT>
+&lt;POINT id="2">
+&lt;par name="dt" value="16" />
+&lt;par name="val" value="127" />
+&lt;/POINT>
+&lt;POINT id="3">
+&lt;par name="dt" value="42" />
+&lt;par name="val" value="126" />
+&lt;/POINT>
+&lt;POINT id="4">
+&lt;par name="dt" value="98" />
+&lt;par name="val" value="127" />
+&lt;/POINT>
+&lt;POINT id="5">
+&lt;par name="dt" value="32" />
+&lt;par name="val" value="30" />
+&lt;/POINT>
+&lt;POINT id="6">
+&lt;par name="dt" value="32" />
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;AMPLITUDE_LFO>
+&lt;par_real name="freq" value="0.629921" exact_value="0x3F214281" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="24" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/AMPLITUDE_LFO>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="15360" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="64" />
+&lt;FREQUENCY_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="3" />
+&lt;par name="env_sustain" value="1" />
+&lt;par name="env_stretch" value="45" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="26" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="67" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FREQUENCY_ENVELOPE>
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.582677" exact_value="0x3F152A52" />
+&lt;par name="intensity" value="38" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par name="velocity_sensing_amplitude" value="35" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="2" />
+&lt;par name="freq" value="90" />
+&lt;par name="q" value="25" />
+&lt;par name="stages" value="2" />
+&lt;par name="freq_track" value="65" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;FILTER_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="47" />
+&lt;par name="D_dt" value="91" />
+&lt;par name="R_dt" value="62" />
+&lt;par name="A_val" value="110" />
+&lt;par name="D_val" value="96" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="53" />
+&lt;/FILTER_ENVELOPE>
+&lt;FILTER_LFO>
+&lt;par_real name="freq" value="0.629921" exact_value="0x3F214281" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FILTER_LFO>
+&lt;/FILTER_PARAMETERS>
+&lt;RESONANCE>
+&lt;par_bool name="enabled" value="no" />
+&lt;/RESONANCE>
+&lt;VOICE id="0">
+&lt;par_bool name="enabled" value="no" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="-1" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="4" />
+&lt;par name="base_function_par" value="43" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="63" />
+&lt;par name="wave_shaping_function" value="1" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="1" />
+&lt;par name="spectrum_adjust_par" value="32" />
+&lt;par name="rand" value="0" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="2">
+&lt;par name="mag" value="105" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="4">
+&lt;par name="mag" value="110" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="15">
+&lt;par name="mag" value="84" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="16">
+&lt;par name="mag" value="96" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="17">
+&lt;par name="mag" value="88" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="32">
+&lt;par name="mag" value="91" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="0" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="10986" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="yes" />
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.220472" exact_value="0x3E61C369" />
+&lt;par name="intensity" value="40" />
+&lt;par name="start_phase" value="0" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="1">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="0" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="24" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="9348" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="yes" />
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.228346" exact_value="0x3E69D389" />
+&lt;par name="intensity" value="29" />
+&lt;par name="start_phase" value="0" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="2">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="0" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="91" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8288" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="3">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="0" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="91" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="7324" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="4">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="0" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="0" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="5493" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;/ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="sub_enabled" value="no" />
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="1">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="2">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="3">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="4">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="8">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="9">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="10">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="11">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="12">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="13">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="14">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="15">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;/INSTRUMENT_KIT>
+&lt;INSTRUMENT_EFFECTS>
+&lt;INSTRUMENT_EFFECT id="0">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;par name="route" value="0" />
+&lt;par_bool name="bypass" value="no" />
+&lt;/INSTRUMENT_EFFECT>
+&lt;INSTRUMENT_EFFECT id="1">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;par name="route" value="0" />
+&lt;par_bool name="bypass" value="no" />
+&lt;/INSTRUMENT_EFFECT>
+&lt;INSTRUMENT_EFFECT id="2">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;par name="route" value="0" />
+&lt;par_bool name="bypass" value="no" />
+&lt;/INSTRUMENT_EFFECT>
+&lt;/INSTRUMENT_EFFECTS>
+&lt;/INSTRUMENT>
+&lt;CONTROLLER>
+&lt;par name="pitchwheel_bendrange" value="200" />
+&lt;par name="pitchwheel_bendrange_down" value="0" />
+&lt;par_bool name="pitchwheel_split" value="no" />
+&lt;par_bool name="expression_receive" value="yes" />
+&lt;par name="panning_depth" value="64" />
+&lt;par name="filter_cutoff_depth" value="64" />
+&lt;par name="filter_q_depth" value="64" />
+&lt;par name="bandwidth_depth" value="64" />
+&lt;par name="mod_wheel_depth" value="80" />
+&lt;par_bool name="mod_wheel_exponential" value="no" />
+&lt;par_bool name="fm_amp_receive" value="yes" />
+&lt;par_bool name="volume_receive" value="yes" />
+&lt;par_bool name="sustain_receive" value="yes" />
+&lt;par_bool name="portamento_receive" value="yes" />
+&lt;par name="portamento_time" value="64" />
+&lt;par name="portamento_pitchthresh" value="3" />
+&lt;par name="portamento_pitchthreshtype" value="1" />
+&lt;par name="portamento_portamento" value="0" />
+&lt;par name="portamento_updowntimestretch" value="64" />
+&lt;par name="portamento_proportional" value="0" />
+&lt;par name="portamento_proprate" value="80" />
+&lt;par name="portamento_propdepth" value="90" />
+&lt;par name="resonance_center_depth" value="64" />
+&lt;par name="resonance_bandwidth_depth" value="64" />
+&lt;/CONTROLLER>
+&lt;/PART>
+&lt;PART id="3">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="4">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="8">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="9">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="10">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="11">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="12">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="13">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="14">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="15">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;SYSTEM_EFFECTS>
+&lt;SYSTEM_EFFECT id="0">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;VOLUME id="0">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="1">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="2">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="3">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="4">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="5">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="6">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="7">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="8">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="9">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="10">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="11">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="12">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="13">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="14">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="15">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;SENDTO id="1">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;SENDTO id="2">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;SENDTO id="3">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;/SYSTEM_EFFECT>
+&lt;SYSTEM_EFFECT id="1">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;VOLUME id="0">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="1">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="2">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="3">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="4">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="5">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="6">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="7">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="8">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="9">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="10">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="11">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="12">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="13">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="14">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="15">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;SENDTO id="2">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;SENDTO id="3">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;/SYSTEM_EFFECT>
+&lt;SYSTEM_EFFECT id="2">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;VOLUME id="0">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="1">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="2">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="3">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="4">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="5">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="6">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="7">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="8">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="9">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="10">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="11">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="12">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="13">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="14">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="15">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;SENDTO id="3">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;/SYSTEM_EFFECT>
+&lt;SYSTEM_EFFECT id="3">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;VOLUME id="0">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="1">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="2">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="3">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="4">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="5">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="6">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="7">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="8">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="9">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="10">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="11">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="12">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="13">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="14">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="15">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;/SYSTEM_EFFECT>
+&lt;/SYSTEM_EFFECTS>
+&lt;INSERTION_EFFECTS>
+&lt;INSERTION_EFFECT id="0">
+&lt;par name="part" value="2" />
+&lt;EFFECT>
+&lt;par name="type" value="1" />
+&lt;par name="preset" value="0" />
+&lt;EFFECT_PARAMETERS>
+&lt;par_no id="0">
+&lt;par name="par" value="80" />
+&lt;/par_no>
+&lt;par_no id="1">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="2">
+&lt;par name="par" value="47" />
+&lt;/par_no>
+&lt;par_no id="3">
+&lt;par name="par" value="24" />
+&lt;/par_no>
+&lt;par_no id="4">
+&lt;par name="par" value="32" />
+&lt;/par_no>
+&lt;par_no id="7">
+&lt;par name="par" value="127" />
+&lt;/par_no>
+&lt;par_no id="9">
+&lt;par name="par" value="83" />
+&lt;/par_no>
+&lt;par_no id="10">
+&lt;par name="par" value="1" />
+&lt;/par_no>
+&lt;par_no id="11">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="12">
+&lt;par name="par" value="20" />
+&lt;/par_no>
+&lt;/EFFECT_PARAMETERS>
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="1">
+&lt;par name="part" value="2" />
+&lt;EFFECT>
+&lt;par name="type" value="1" />
+&lt;par name="preset" value="0" />
+&lt;EFFECT_PARAMETERS>
+&lt;par_no id="0">
+&lt;par name="par" value="40" />
+&lt;/par_no>
+&lt;par_no id="1">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="2">
+&lt;par name="par" value="79" />
+&lt;/par_no>
+&lt;par_no id="3">
+&lt;par name="par" value="24" />
+&lt;/par_no>
+&lt;par_no id="7">
+&lt;par name="par" value="61" />
+&lt;/par_no>
+&lt;par_no id="8">
+&lt;par name="par" value="77" />
+&lt;/par_no>
+&lt;par_no id="9">
+&lt;par name="par" value="83" />
+&lt;/par_no>
+&lt;par_no id="10">
+&lt;par name="par" value="1" />
+&lt;/par_no>
+&lt;par_no id="11">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="12">
+&lt;par name="par" value="20" />
+&lt;/par_no>
+&lt;/EFFECT_PARAMETERS>
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="2">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="3">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="4">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="5">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="6">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="7">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;/INSERTION_EFFECTS>
+&lt;/MASTER>
+&lt;/ZynAddSubFX-data>
+</config>
+      </configs>
+      <params/>
+      <controllers/>
+      <editor-pos>694,460</editor-pos>
+      <form-pos>0,0</form-pos>
+     </plugin>
+     <audio-output-bus-name></audio-output-bus-name>
+     <audio-output-bus>0</audio-output-bus>
+     <audio-output-auto-connect>1</audio-output-auto-connect>
+    </output-plugins>
+    <output-connects>
+     <connect index="0">
+      <client>128:a2jmidid</client>
+      <port>0:port</port>
+     </connect>
+    </output-connects>
+    <midi-map>
+     <midi-patch channel="1">
+      <midi-bank-sel-method>0</midi-bank-sel-method>
+      <midi-program>90</midi-program>
+     </midi-patch>
+    </midi-map>
+   </midi-bus>
+   <midi-bus mode="duplex" name="Drums">
+    <monitor>0</monitor>
+    <input-gain>1</input-gain>
+    <input-panning>0</input-panning>
+    <input-controllers/>
+    <input-plugins>
+     <audio-output-bus-name></audio-output-bus-name>
+     <audio-output-bus>0</audio-output-bus>
+     <audio-output-auto-connect>1</audio-output-auto-connect>
+    </input-plugins>
+    <input-connects>
+     <connect index="0">
+      <client>128:a2jmidid</client>
+      <port>0:port</port>
+     </connect>
+    </input-connects>
+    <output-gain>1</output-gain>
+    <output-panning>0</output-panning>
+    <output-controllers/>
+    <output-plugins>
+     <bank>0</bank>
+     <program>0</program>
+     <plugin type="LV2">
+      <filename>http://zynaddsubfx.sourceforge.net</filename>
+      <index>0</index>
+      <label>ZynAddSubFX</label>
+      <preset></preset>
+      <direct-access-param>-1</direct-access-param>
+      <activated>1</activated>
+      <configs>
+       <config key="urn:distrho:state">
+&lt;?xml version="1.0f" encoding="UTF-8"?>
+&lt;!DOCTYPE ZynAddSubFX-data>
+&lt;ZynAddSubFX-data version-major="2" version-minor="5"
+version-revision="4" ZynAddSubFX-author="Nasca Octavian Paul">
+&lt;INFORMATION />
+&lt;BASE_PARAMETERS>
+&lt;par name="max_midi_parts" value="16" />
+&lt;par name="max_kit_items_per_instrument" value="16" />
+&lt;par name="max_system_effects" value="4" />
+&lt;par name="max_insertion_effects" value="8" />
+&lt;par name="max_instrument_effects" value="3" />
+&lt;par name="max_addsynth_voices" value="8" />
+&lt;/BASE_PARAMETERS>
+&lt;MASTER>
+&lt;par name="volume" value="88" />
+&lt;par name="key_shift" value="64" />
+&lt;par_bool name="nrpn_receive" value="yes" />
+&lt;MICROTONAL>
+&lt;string name="name">12tET&lt;/string>
+&lt;string name="comment">Equal Temperament 12 notes per octave&lt;/string>
+&lt;par_bool name="invert_up_down" value="no" />
+&lt;par name="invert_up_down_center" value="60" />
+&lt;par_bool name="enabled" value="no" />
+&lt;par name="global_fine_detune" value="64" />
+&lt;par name="a_note" value="69" />
+&lt;par_real name="a_freq" value="440" exact_value="0x43DC0000" />
+&lt;/MICROTONAL>
+&lt;PART id="0">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="1">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="2">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="3">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="4">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="8">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="9">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="volume" value="64" />
+&lt;par name="panning" value="64" />
+&lt;par name="min_key" value="0" />
+&lt;par name="max_key" value="127" />
+&lt;par name="key_shift" value="64" />
+&lt;par name="rcv_chn" value="9" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;par name="velocity_offset" value="64" />
+&lt;par_bool name="note_on" value="yes" />
+&lt;par_bool name="poly_mode" value="yes" />
+&lt;par name="legato_mode" value="0" />
+&lt;par name="key_limit" value="15" />
+&lt;INSTRUMENT>
+&lt;INFO>
+&lt;string name="name">Drums Kit1&lt;/string>
+&lt;string name="author">&lt;/string>
+&lt;string name="comments">&lt;/string>
+&lt;par name="type" value="0" />
+&lt;/INFO>
+&lt;INSTRUMENT_KIT>
+&lt;par name="kit_mode" value="2" />
+&lt;par_bool name="drum_mode" value="yes" />
+&lt;INSTRUMENT_KIT_ITEM id="0">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">Drums Kit&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="0" />
+&lt;par name="max_key" value="127" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="no" />
+&lt;par_bool name="sub_enabled" value="no" />
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="1">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">Snare Drum 2&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="40" />
+&lt;par name="max_key" value="40" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="yes" />
+&lt;ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="stereo" value="yes" />
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="volume" value="79" />
+&lt;par name="panning" value="64" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;par name="fadein_adjustment" value="20" />
+&lt;par name="punch_strength" value="34" />
+&lt;par name="punch_time" value="84" />
+&lt;par name="punch_stretch" value="7" />
+&lt;par name="punch_velocity_sensing" value="72" />
+&lt;par name="harmonic_randomness_grouping" value="0" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="yes" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="0" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="yes" />
+&lt;par name="A_dt" value="0" />
+&lt;par name="D_dt" value="40" />
+&lt;par name="R_dt" value="25" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="127" />
+&lt;par name="R_val" value="64" />
+&lt;POINT id="0">
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;POINT id="1">
+&lt;par name="dt" value="0" />
+&lt;par name="val" value="127" />
+&lt;/POINT>
+&lt;POINT id="2">
+&lt;par name="dt" value="50" />
+&lt;par name="val" value="127" />
+&lt;/POINT>
+&lt;POINT id="3">
+&lt;par name="dt" value="50" />
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;AMPLITUDE_LFO>
+&lt;par_real name="freq" value="0.629921" exact_value="0x3F214281" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/AMPLITUDE_LFO>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="64" />
+&lt;FREQUENCY_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="3" />
+&lt;par name="env_sustain" value="1" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="50" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FREQUENCY_ENVELOPE>
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.551181" exact_value="0x3F0D1A33" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par name="velocity_sensing_amplitude" value="64" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="2" />
+&lt;par name="freq" value="79" />
+&lt;par name="q" value="22" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;FILTER_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="49" />
+&lt;par name="D_dt" value="70" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="98" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FILTER_ENVELOPE>
+&lt;FILTER_LFO>
+&lt;par_real name="freq" value="0.629921" exact_value="0x3F214281" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FILTER_LFO>
+&lt;/FILTER_PARAMETERS>
+&lt;RESONANCE>
+&lt;par_bool name="enabled" value="no" />
+&lt;/RESONANCE>
+&lt;VOICE id="0">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="1" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="-1" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="yes" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="84" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par name="velocity_sensing_amplitude" value="0" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="2" />
+&lt;par name="freq" value="57" />
+&lt;par name="q" value="77" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;par_bool name="filter_envelope_enabled" value="no" />
+&lt;par_bool name="filter_lfo_enabled" value="no" />
+&lt;/FILTER_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="1">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="1" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="-1" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="yes" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="53" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="yes" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="4" />
+&lt;par name="D_dt" value="81" />
+&lt;par name="R_dt" value="100" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="0" />
+&lt;par name="R_val" value="64" />
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par name="velocity_sensing_amplitude" value="0" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="0" />
+&lt;par name="freq" value="96" />
+&lt;par name="q" value="24" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;par_bool name="filter_envelope_enabled" value="no" />
+&lt;par_bool name="filter_lfo_enabled" value="no" />
+&lt;/FILTER_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="2">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="-1" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="2">
+&lt;par name="mag" value="84" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="64" />
+&lt;par name="volume" value="75" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="yes" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="14345" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="yes" />
+&lt;FREQUENCY_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="3" />
+&lt;par name="env_sustain" value="1" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="45" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="94" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FREQUENCY_ENVELOPE>
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="3">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="4">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;/ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="sub_enabled" value="no" />
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="2">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">Hit Hat (closed)&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="42" />
+&lt;par name="max_key" value="42" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="no" />
+&lt;par_bool name="sub_enabled" value="yes" />
+&lt;SUB_SYNTH_PARAMETERS>
+&lt;par name="num_stages" value="2" />
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="start" value="2" />
+&lt;HARMONICS>
+&lt;HARMONIC id="25">
+&lt;par name="mag" value="122" />
+&lt;par name="relbw" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="26">
+&lt;par name="mag" value="123" />
+&lt;par name="relbw" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="27">
+&lt;par name="mag" value="127" />
+&lt;par name="relbw" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="30">
+&lt;par name="mag" value="127" />
+&lt;par name="relbw" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par_bool name="stereo" value="yes" />
+&lt;par name="volume" value="96" />
+&lt;par name="panning" value="64" />
+&lt;par name="velocity_sensing" value="90" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="yes" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="0" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="yes" />
+&lt;par name="A_dt" value="0" />
+&lt;par name="D_dt" value="40" />
+&lt;par name="R_dt" value="25" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="0" />
+&lt;par name="R_val" value="64" />
+&lt;POINT id="0">
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;POINT id="1">
+&lt;par name="dt" value="0" />
+&lt;par name="val" value="127" />
+&lt;/POINT>
+&lt;POINT id="2">
+&lt;par name="dt" value="38" />
+&lt;par name="val" value="1" />
+&lt;/POINT>
+&lt;POINT id="3">
+&lt;par name="dt" value="25" />
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="yes" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="15360" />
+&lt;par name="overtone_spread_type" value="0" />
+&lt;par name="overtone_spread_par1" value="0" />
+&lt;par name="overtone_spread_par2" value="0" />
+&lt;par name="overtone_spread_par3" value="0" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="75" />
+&lt;par name="bandwidth_scale" value="64" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="band_width_envelope_enabled" value="yes" />
+&lt;BANDWIDTH_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="3" />
+&lt;par name="env_sustain" value="1" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="31" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="52" />
+&lt;par name="A_val" value="63" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="55" />
+&lt;/BANDWIDTH_ENVELOPE>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par_bool name="enabled" value="no" />
+&lt;/FILTER_PARAMETERS>
+&lt;/SUB_SYNTH_PARAMETERS>
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="3">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">Cymbal&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="46" />
+&lt;par name="max_key" value="46" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="no" />
+&lt;par_bool name="sub_enabled" value="yes" />
+&lt;SUB_SYNTH_PARAMETERS>
+&lt;par name="num_stages" value="2" />
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="start" value="2" />
+&lt;HARMONICS>
+&lt;HARMONIC id="12">
+&lt;par name="mag" value="110" />
+&lt;par name="relbw" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="14">
+&lt;par name="mag" value="96" />
+&lt;par name="relbw" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="16">
+&lt;par name="mag" value="127" />
+&lt;par name="relbw" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="17">
+&lt;par name="mag" value="123" />
+&lt;par name="relbw" value="86" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="30">
+&lt;par name="mag" value="127" />
+&lt;par name="relbw" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par_bool name="stereo" value="yes" />
+&lt;par name="volume" value="96" />
+&lt;par name="panning" value="64" />
+&lt;par name="velocity_sensing" value="90" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="yes" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="0" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="yes" />
+&lt;par name="A_dt" value="0" />
+&lt;par name="D_dt" value="40" />
+&lt;par name="R_dt" value="25" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="0" />
+&lt;par name="R_val" value="64" />
+&lt;POINT id="0">
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;POINT id="1">
+&lt;par name="dt" value="0" />
+&lt;par name="val" value="127" />
+&lt;/POINT>
+&lt;POINT id="2">
+&lt;par name="dt" value="72" />
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;POINT id="3">
+&lt;par name="dt" value="25" />
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="yes" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="1021" />
+&lt;par name="overtone_spread_type" value="0" />
+&lt;par name="overtone_spread_par1" value="0" />
+&lt;par name="overtone_spread_par2" value="0" />
+&lt;par name="overtone_spread_par3" value="0" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="75" />
+&lt;par name="bandwidth_scale" value="64" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="band_width_envelope_enabled" value="yes" />
+&lt;BANDWIDTH_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="3" />
+&lt;par name="env_sustain" value="1" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="31" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="83" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/BANDWIDTH_ENVELOPE>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par_bool name="enabled" value="no" />
+&lt;/FILTER_PARAMETERS>
+&lt;/SUB_SYNTH_PARAMETERS>
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="4">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">Bass Drum 1&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="35" />
+&lt;par name="max_key" value="35" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="yes" />
+&lt;ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="stereo" value="yes" />
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="volume" value="93" />
+&lt;par name="panning" value="64" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;par name="fadein_adjustment" value="20" />
+&lt;par name="punch_strength" value="0" />
+&lt;par name="punch_time" value="60" />
+&lt;par name="punch_stretch" value="64" />
+&lt;par name="punch_velocity_sensing" value="72" />
+&lt;par name="harmonic_randomness_grouping" value="0" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="64" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="0" />
+&lt;par name="D_dt" value="40" />
+&lt;par name="R_dt" value="25" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="0" />
+&lt;par name="R_val" value="64" />
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;AMPLITUDE_LFO>
+&lt;par_real name="freq" value="0.629921" exact_value="0x3F214281" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/AMPLITUDE_LFO>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="64" />
+&lt;FREQUENCY_ENVELOPE>
+&lt;par_bool name="free_mode" value="yes" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="50" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;POINT id="0">
+&lt;par name="val" value="94" />
+&lt;/POINT>
+&lt;POINT id="1">
+&lt;par name="dt" value="11" />
+&lt;par name="val" value="64" />
+&lt;/POINT>
+&lt;POINT id="2">
+&lt;par name="dt" value="37" />
+&lt;par name="val" value="29" />
+&lt;/POINT>
+&lt;POINT id="3">
+&lt;par name="dt" value="60" />
+&lt;par name="val" value="20" />
+&lt;/POINT>
+&lt;/FREQUENCY_ENVELOPE>
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.551181" exact_value="0x3F0D1A33" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par name="velocity_sensing_amplitude" value="64" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="2" />
+&lt;par name="freq" value="94" />
+&lt;par name="q" value="40" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;FILTER_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="40" />
+&lt;par name="D_dt" value="70" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FILTER_ENVELOPE>
+&lt;FILTER_LFO>
+&lt;par_real name="freq" value="0.629921" exact_value="0x3F214281" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FILTER_LFO>
+&lt;/FILTER_PARAMETERS>
+&lt;RESONANCE>
+&lt;par_bool name="enabled" value="no" />
+&lt;/RESONANCE>
+&lt;VOICE id="0">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="-1" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="2">
+&lt;par name="mag" value="73" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="127" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="yes" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="14336" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="1">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="2">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="3">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="4">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;/ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="sub_enabled" value="no" />
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="5">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">Hard Snare&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="39" />
+&lt;par name="max_key" value="39" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="no" />
+&lt;par_bool name="sub_enabled" value="yes" />
+&lt;SUB_SYNTH_PARAMETERS>
+&lt;par name="num_stages" value="2" />
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="start" value="1" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="relbw" value="86" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par_bool name="stereo" value="yes" />
+&lt;par name="volume" value="107" />
+&lt;par name="panning" value="64" />
+&lt;par name="velocity_sensing" value="90" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="yes" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="0" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="0" />
+&lt;par name="D_dt" value="40" />
+&lt;par name="R_dt" value="25" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="127" />
+&lt;par name="R_val" value="64" />
+&lt;POINT id="0">
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;POINT id="1">
+&lt;par name="dt" value="0" />
+&lt;par name="val" value="127" />
+&lt;/POINT>
+&lt;POINT id="2">
+&lt;par name="dt" value="57" />
+&lt;par name="val" value="127" />
+&lt;/POINT>
+&lt;POINT id="3">
+&lt;par name="dt" value="62" />
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="yes" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="13312" />
+&lt;par name="overtone_spread_type" value="0" />
+&lt;par name="overtone_spread_par1" value="0" />
+&lt;par name="overtone_spread_par2" value="0" />
+&lt;par name="overtone_spread_par3" value="0" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="62" />
+&lt;par name="bandwidth_scale" value="64" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="band_width_envelope_enabled" value="yes" />
+&lt;BANDWIDTH_ENVELOPE>
+&lt;par_bool name="free_mode" value="yes" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="75" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="100" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;POINT id="0">
+&lt;par name="val" value="106" />
+&lt;/POINT>
+&lt;POINT id="1">
+&lt;par name="dt" value="23" />
+&lt;par name="val" value="102" />
+&lt;/POINT>
+&lt;POINT id="2">
+&lt;par name="dt" value="75" />
+&lt;par name="val" value="64" />
+&lt;/POINT>
+&lt;POINT id="3">
+&lt;par name="dt" value="60" />
+&lt;par name="val" value="64" />
+&lt;/POINT>
+&lt;/BANDWIDTH_ENVELOPE>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par_bool name="enabled" value="yes" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="2" />
+&lt;par name="freq" value="70" />
+&lt;par name="q" value="20" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;par name="filter_velocity_sensing" value="64" />
+&lt;par name="filter_velocity_sensing_amplitude" value="64" />
+&lt;FILTER_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="40" />
+&lt;par name="D_dt" value="70" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="82" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FILTER_ENVELOPE>
+&lt;/FILTER_PARAMETERS>
+&lt;/SUB_SYNTH_PARAMETERS>
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="6">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">Hit-hat (pedal)&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="44" />
+&lt;par name="max_key" value="44" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="no" />
+&lt;par_bool name="sub_enabled" value="yes" />
+&lt;SUB_SYNTH_PARAMETERS>
+&lt;par name="num_stages" value="2" />
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="start" value="2" />
+&lt;HARMONICS>
+&lt;HARMONIC id="13">
+&lt;par name="mag" value="122" />
+&lt;par name="relbw" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="14">
+&lt;par name="mag" value="123" />
+&lt;par name="relbw" value="64" />
+&lt;/HARMONIC>
+&lt;HARMONIC id="15">
+&lt;par name="mag" value="125" />
+&lt;par name="relbw" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par_bool name="stereo" value="yes" />
+&lt;par name="volume" value="104" />
+&lt;par name="panning" value="64" />
+&lt;par name="velocity_sensing" value="90" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="yes" />
+&lt;par name="env_points" value="3" />
+&lt;par name="env_sustain" value="0" />
+&lt;par name="env_stretch" value="64" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="0" />
+&lt;par name="D_dt" value="40" />
+&lt;par name="R_dt" value="25" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="0" />
+&lt;par name="R_val" value="64" />
+&lt;POINT id="0">
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;POINT id="1">
+&lt;par name="dt" value="0" />
+&lt;par name="val" value="127" />
+&lt;/POINT>
+&lt;POINT id="2">
+&lt;par name="dt" value="27" />
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="yes" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="overtone_spread_type" value="0" />
+&lt;par name="overtone_spread_par1" value="0" />
+&lt;par name="overtone_spread_par2" value="0" />
+&lt;par name="overtone_spread_par3" value="0" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="80" />
+&lt;par name="bandwidth_scale" value="64" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="band_width_envelope_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par_bool name="enabled" value="no" />
+&lt;/FILTER_PARAMETERS>
+&lt;/SUB_SYNTH_PARAMETERS>
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="7">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">Snare Drum 1&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="38" />
+&lt;par name="max_key" value="38" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="yes" />
+&lt;ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="stereo" value="yes" />
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="volume" value="81" />
+&lt;par name="panning" value="64" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;par name="fadein_adjustment" value="20" />
+&lt;par name="punch_strength" value="34" />
+&lt;par name="punch_time" value="83" />
+&lt;par name="punch_stretch" value="0" />
+&lt;par name="punch_velocity_sensing" value="72" />
+&lt;par name="harmonic_randomness_grouping" value="0" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="yes" />
+&lt;par name="env_points" value="5" />
+&lt;par name="env_sustain" value="0" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="0" />
+&lt;par name="D_dt" value="40" />
+&lt;par name="R_dt" value="25" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="127" />
+&lt;par name="R_val" value="64" />
+&lt;POINT id="0">
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;POINT id="1">
+&lt;par name="dt" value="0" />
+&lt;par name="val" value="127" />
+&lt;/POINT>
+&lt;POINT id="2">
+&lt;par name="dt" value="16" />
+&lt;par name="val" value="97" />
+&lt;/POINT>
+&lt;POINT id="3">
+&lt;par name="dt" value="52" />
+&lt;par name="val" value="60" />
+&lt;/POINT>
+&lt;POINT id="4">
+&lt;par name="dt" value="33" />
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;AMPLITUDE_LFO>
+&lt;par_real name="freq" value="0.629921" exact_value="0x3F214281" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/AMPLITUDE_LFO>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par name="detune" value="7715" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="64" />
+&lt;FREQUENCY_ENVELOPE>
+&lt;par_bool name="free_mode" value="yes" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="50" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;POINT id="0">
+&lt;par name="val" value="96" />
+&lt;/POINT>
+&lt;POINT id="1">
+&lt;par name="dt" value="7" />
+&lt;par name="val" value="66" />
+&lt;/POINT>
+&lt;POINT id="2">
+&lt;par name="dt" value="47" />
+&lt;par name="val" value="19" />
+&lt;/POINT>
+&lt;POINT id="3">
+&lt;par name="dt" value="26" />
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;/FREQUENCY_ENVELOPE>
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.551181" exact_value="0x3F0D1A33" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par name="velocity_sensing_amplitude" value="64" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="2" />
+&lt;par name="freq" value="94" />
+&lt;par name="q" value="40" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;FILTER_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="40" />
+&lt;par name="D_dt" value="70" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FILTER_ENVELOPE>
+&lt;FILTER_LFO>
+&lt;par_real name="freq" value="0.629921" exact_value="0x3F214281" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FILTER_LFO>
+&lt;/FILTER_PARAMETERS>
+&lt;RESONANCE>
+&lt;par_bool name="enabled" value="no" />
+&lt;/RESONANCE>
+&lt;VOICE id="0">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="-1" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="64" />
+&lt;par name="volume" value="108" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="yes" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="15360" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="1">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="1" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="-1" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="yes" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="64" />
+&lt;par name="volume" value="110" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par name="velocity_sensing_amplitude" value="0" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="4" />
+&lt;par name="freq" value="112" />
+&lt;par name="q" value="26" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;par_bool name="filter_envelope_enabled" value="no" />
+&lt;par_bool name="filter_lfo_enabled" value="no" />
+&lt;/FILTER_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="2">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="1" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="-1" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="yes" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="64" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par name="velocity_sensing_amplitude" value="0" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="2" />
+&lt;par name="freq" value="67" />
+&lt;par name="q" value="32" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;par_bool name="filter_envelope_enabled" value="no" />
+&lt;par_bool name="filter_lfo_enabled" value="no" />
+&lt;/FILTER_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="3">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="4">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;/ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="sub_enabled" value="no" />
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="8">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">Side Stick&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="37" />
+&lt;par name="max_key" value="37" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="yes" />
+&lt;ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="stereo" value="yes" />
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="volume" value="72" />
+&lt;par name="panning" value="64" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;par name="fadein_adjustment" value="20" />
+&lt;par name="punch_strength" value="39" />
+&lt;par name="punch_time" value="60" />
+&lt;par name="punch_stretch" value="64" />
+&lt;par name="punch_velocity_sensing" value="72" />
+&lt;par name="harmonic_randomness_grouping" value="0" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="0" />
+&lt;par name="D_dt" value="67" />
+&lt;par name="R_dt" value="25" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="0" />
+&lt;par name="R_val" value="64" />
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;AMPLITUDE_LFO>
+&lt;par_real name="freq" value="0.629921" exact_value="0x3F214281" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/AMPLITUDE_LFO>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="64" />
+&lt;FREQUENCY_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="3" />
+&lt;par name="env_sustain" value="1" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="50" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FREQUENCY_ENVELOPE>
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.551181" exact_value="0x3F0D1A33" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par name="velocity_sensing_amplitude" value="64" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="2" />
+&lt;par name="freq" value="94" />
+&lt;par name="q" value="40" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;FILTER_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="40" />
+&lt;par name="D_dt" value="70" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FILTER_ENVELOPE>
+&lt;FILTER_LFO>
+&lt;par_real name="freq" value="0.629921" exact_value="0x3F214281" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FILTER_LFO>
+&lt;/FILTER_PARAMETERS>
+&lt;RESONANCE>
+&lt;par_bool name="enabled" value="no" />
+&lt;/RESONANCE>
+&lt;VOICE id="0">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="1" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="-1" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="yes" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="64" />
+&lt;par name="volume" value="99" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="yes" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="1024" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par name="velocity_sensing_amplitude" value="0" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="2" />
+&lt;par name="freq" value="81" />
+&lt;par name="q" value="90" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;par_bool name="filter_envelope_enabled" value="no" />
+&lt;par_bool name="filter_lfo_enabled" value="no" />
+&lt;/FILTER_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="1">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="2">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="3">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="4">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;/ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="sub_enabled" value="no" />
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="9">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">Bass Drum 2&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="36" />
+&lt;par name="max_key" value="36" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="no" />
+&lt;par_bool name="sub_enabled" value="yes" />
+&lt;SUB_SYNTH_PARAMETERS>
+&lt;par name="num_stages" value="2" />
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="start" value="1" />
+&lt;HARMONICS>
+&lt;HARMONIC id="0">
+&lt;par name="mag" value="127" />
+&lt;par name="relbw" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par_bool name="stereo" value="no" />
+&lt;par name="volume" value="113" />
+&lt;par name="panning" value="64" />
+&lt;par name="velocity_sensing" value="90" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="yes" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="0" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="0" />
+&lt;par name="D_dt" value="40" />
+&lt;par name="R_dt" value="25" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="127" />
+&lt;par name="R_val" value="64" />
+&lt;POINT id="0">
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;POINT id="1">
+&lt;par name="dt" value="0" />
+&lt;par name="val" value="127" />
+&lt;/POINT>
+&lt;POINT id="2">
+&lt;par name="dt" value="41" />
+&lt;par name="val" value="127" />
+&lt;/POINT>
+&lt;POINT id="3">
+&lt;par name="dt" value="54" />
+&lt;par name="val" value="0" />
+&lt;/POINT>
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="yes" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="13312" />
+&lt;par name="overtone_spread_type" value="0" />
+&lt;par name="overtone_spread_par1" value="0" />
+&lt;par name="overtone_spread_par2" value="0" />
+&lt;par name="overtone_spread_par3" value="0" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="71" />
+&lt;par name="bandwidth_scale" value="64" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="band_width_envelope_enabled" value="yes" />
+&lt;BANDWIDTH_ENVELOPE>
+&lt;par_bool name="free_mode" value="yes" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="75" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="100" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;POINT id="0">
+&lt;par name="val" value="110" />
+&lt;/POINT>
+&lt;POINT id="1">
+&lt;par name="dt" value="23" />
+&lt;par name="val" value="102" />
+&lt;/POINT>
+&lt;POINT id="2">
+&lt;par name="dt" value="75" />
+&lt;par name="val" value="64" />
+&lt;/POINT>
+&lt;POINT id="3">
+&lt;par name="dt" value="60" />
+&lt;par name="val" value="64" />
+&lt;/POINT>
+&lt;/BANDWIDTH_ENVELOPE>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par_bool name="enabled" value="yes" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="2" />
+&lt;par name="freq" value="70" />
+&lt;par name="q" value="20" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;par name="filter_velocity_sensing" value="64" />
+&lt;par name="filter_velocity_sensing_amplitude" value="64" />
+&lt;FILTER_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="40" />
+&lt;par name="D_dt" value="70" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="82" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FILTER_ENVELOPE>
+&lt;/FILTER_PARAMETERS>
+&lt;/SUB_SYNTH_PARAMETERS>
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="10">
+&lt;par_bool name="enabled" value="yes" />
+&lt;string name="name">Tom&lt;/string>
+&lt;par_bool name="muted" value="no" />
+&lt;par name="min_key" value="41" />
+&lt;par name="max_key" value="50" />
+&lt;par name="send_to_instrument_effect" value="0" />
+&lt;par_bool name="add_enabled" value="yes" />
+&lt;ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="stereo" value="yes" />
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="volume" value="86" />
+&lt;par name="panning" value="64" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;par name="fadein_adjustment" value="20" />
+&lt;par name="punch_strength" value="36" />
+&lt;par name="punch_time" value="60" />
+&lt;par name="punch_stretch" value="64" />
+&lt;par name="punch_velocity_sensing" value="72" />
+&lt;par name="harmonic_randomness_grouping" value="0" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="0" />
+&lt;par name="D_dt" value="72" />
+&lt;par name="R_dt" value="25" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="0" />
+&lt;par name="R_val" value="64" />
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;AMPLITUDE_LFO>
+&lt;par_real name="freq" value="0.629921" exact_value="0x3F214281" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/AMPLITUDE_LFO>
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="1" />
+&lt;par name="bandwidth" value="64" />
+&lt;FREQUENCY_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="3" />
+&lt;par name="env_sustain" value="1" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="50" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FREQUENCY_ENVELOPE>
+&lt;FREQUENCY_LFO>
+&lt;par_real name="freq" value="0.551181" exact_value="0x3F0D1A33" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FREQUENCY_LFO>
+&lt;/FREQUENCY_PARAMETERS>
+&lt;FILTER_PARAMETERS>
+&lt;par name="velocity_sensing_amplitude" value="64" />
+&lt;par name="velocity_sensing" value="64" />
+&lt;FILTER>
+&lt;par name="category" value="0" />
+&lt;par name="type" value="0" />
+&lt;par name="freq" value="70" />
+&lt;par name="q" value="40" />
+&lt;par name="stages" value="0" />
+&lt;par name="freq_track" value="64" />
+&lt;par name="gain" value="64" />
+&lt;/FILTER>
+&lt;FILTER_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="yes" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="40" />
+&lt;par name="D_dt" value="70" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FILTER_ENVELOPE>
+&lt;FILTER_LFO>
+&lt;par_real name="freq" value="0.629921" exact_value="0x3F214281" />
+&lt;par name="intensity" value="0" />
+&lt;par name="start_phase" value="64" />
+&lt;par name="lfo_type" value="0" />
+&lt;par name="randomness_amplitude" value="0" />
+&lt;par name="randomness_frequency" value="0" />
+&lt;par name="delay" value="0" />
+&lt;par name="stretch" value="64" />
+&lt;par_bool name="continous" value="no" />
+&lt;/FILTER_LFO>
+&lt;/FILTER_PARAMETERS>
+&lt;RESONANCE>
+&lt;par_bool name="enabled" value="no" />
+&lt;/RESONANCE>
+&lt;VOICE id="0">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="0" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="-1" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="16" />
+&lt;par name="volume" value="100" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="no" />
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="yes" />
+&lt;par name="fixed_freq_et" value="77" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="2048" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="yes" />
+&lt;FREQUENCY_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="3" />
+&lt;par name="env_sustain" value="1" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="50" />
+&lt;par name="D_dt" value="10" />
+&lt;par name="R_dt" value="60" />
+&lt;par name="A_val" value="99" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="64" />
+&lt;par name="R_val" value="64" />
+&lt;/FREQUENCY_ENVELOPE>
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="1">
+&lt;par_bool name="enabled" value="yes" />
+&lt;par name="type" value="1" />
+&lt;par name="unison_size" value="1" />
+&lt;par name="unison_frequency_spread" value="60" />
+&lt;par name="unison_stereo_spread" value="64" />
+&lt;par name="unison_vibratto" value="64" />
+&lt;par name="unison_vibratto_speed" value="64" />
+&lt;par name="unison_invert_phase" value="0" />
+&lt;par name="unison_phase_randomness" value="127" />
+&lt;par name="delay" value="0" />
+&lt;par_bool name="resonance" value="yes" />
+&lt;par name="ext_oscil" value="-1" />
+&lt;par name="ext_fm_oscil" value="-1" />
+&lt;par name="oscil_phase" value="64" />
+&lt;par name="oscil_fm_phase" value="64" />
+&lt;par_bool name="filter_enabled" value="no" />
+&lt;par_bool name="filter_bypass" value="no" />
+&lt;par name="fm_enabled" value="0" />
+&lt;OSCIL>
+&lt;par name="harmonic_mag_type" value="0" />
+&lt;par name="base_function" value="0" />
+&lt;par name="base_function_par" value="64" />
+&lt;par name="base_function_modulation" value="0" />
+&lt;par name="base_function_modulation_par1" value="64" />
+&lt;par name="base_function_modulation_par2" value="64" />
+&lt;par name="base_function_modulation_par3" value="32" />
+&lt;par name="modulation" value="0" />
+&lt;par name="modulation_par1" value="64" />
+&lt;par name="modulation_par2" value="64" />
+&lt;par name="modulation_par3" value="32" />
+&lt;par name="wave_shaping" value="64" />
+&lt;par name="wave_shaping_function" value="0" />
+&lt;par name="filter_type" value="0" />
+&lt;par name="filter_par1" value="64" />
+&lt;par name="filter_par2" value="64" />
+&lt;par name="filter_before_wave_shaping" value="0" />
+&lt;par name="spectrum_adjust_type" value="0" />
+&lt;par name="spectrum_adjust_par" value="64" />
+&lt;par name="rand" value="64" />
+&lt;par name="amp_rand_type" value="0" />
+&lt;par name="amp_rand_power" value="64" />
+&lt;par name="harmonic_shift" value="0" />
+&lt;par_bool name="harmonic_shift_first" value="no" />
+&lt;par name="adaptive_harmonics" value="0" />
+&lt;par name="adaptive_harmonics_base_frequency" value="128" />
+&lt;par name="adaptive_harmonics_power" value="100" />
+&lt;par name="adaptive_harmonics_par" value="50" />
+&lt;HARMONICS>
+&lt;HARMONIC id="1">
+&lt;par name="mag" value="127" />
+&lt;par name="phase" value="64" />
+&lt;/HARMONIC>
+&lt;/HARMONICS>
+&lt;/OSCIL>
+&lt;AMPLITUDE_PARAMETERS>
+&lt;par name="panning" value="64" />
+&lt;par name="volume" value="89" />
+&lt;par_bool name="volume_minus" value="no" />
+&lt;par name="velocity_sensing" value="127" />
+&lt;par_bool name="amp_envelope_enabled" value="yes" />
+&lt;AMPLITUDE_ENVELOPE>
+&lt;par_bool name="free_mode" value="no" />
+&lt;par name="env_points" value="4" />
+&lt;par name="env_sustain" value="2" />
+&lt;par name="env_stretch" value="0" />
+&lt;par_bool name="forced_release" value="no" />
+&lt;par_bool name="linear_envelope" value="no" />
+&lt;par name="A_dt" value="4" />
+&lt;par name="D_dt" value="49" />
+&lt;par name="R_dt" value="36" />
+&lt;par name="A_val" value="64" />
+&lt;par name="D_val" value="64" />
+&lt;par name="S_val" value="28" />
+&lt;par name="R_val" value="64" />
+&lt;/AMPLITUDE_ENVELOPE>
+&lt;par_bool name="amp_lfo_enabled" value="no" />
+&lt;/AMPLITUDE_PARAMETERS>
+&lt;FREQUENCY_PARAMETERS>
+&lt;par_bool name="fixed_freq" value="no" />
+&lt;par name="fixed_freq_et" value="0" />
+&lt;par name="bend_adjust" value="88" />
+&lt;par name="offset_hz" value="64" />
+&lt;par name="detune" value="8192" />
+&lt;par name="coarse_detune" value="0" />
+&lt;par name="detune_type" value="0" />
+&lt;par_bool name="freq_envelope_enabled" value="no" />
+&lt;par_bool name="freq_lfo_enabled" value="no" />
+&lt;/FREQUENCY_PARAMETERS>
+&lt;/VOICE>
+&lt;VOICE id="2">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="3">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="4">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="5">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="6">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;VOICE id="7">
+&lt;par_bool name="enabled" value="no" />
+&lt;/VOICE>
+&lt;/ADD_SYNTH_PARAMETERS>
+&lt;par_bool name="sub_enabled" value="no" />
+&lt;par_bool name="pad_enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="11">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="12">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="13">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="14">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;INSTRUMENT_KIT_ITEM id="15">
+&lt;par_bool name="enabled" value="no" />
+&lt;/INSTRUMENT_KIT_ITEM>
+&lt;/INSTRUMENT_KIT>
+&lt;INSTRUMENT_EFFECTS>
+&lt;INSTRUMENT_EFFECT id="0">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;par name="route" value="0" />
+&lt;par_bool name="bypass" value="no" />
+&lt;/INSTRUMENT_EFFECT>
+&lt;INSTRUMENT_EFFECT id="1">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;par name="route" value="0" />
+&lt;par_bool name="bypass" value="no" />
+&lt;/INSTRUMENT_EFFECT>
+&lt;INSTRUMENT_EFFECT id="2">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;par name="route" value="0" />
+&lt;par_bool name="bypass" value="no" />
+&lt;/INSTRUMENT_EFFECT>
+&lt;/INSTRUMENT_EFFECTS>
+&lt;/INSTRUMENT>
+&lt;CONTROLLER>
+&lt;par name="pitchwheel_bendrange" value="200" />
+&lt;par name="pitchwheel_bendrange_down" value="0" />
+&lt;par_bool name="pitchwheel_split" value="no" />
+&lt;par_bool name="expression_receive" value="yes" />
+&lt;par name="panning_depth" value="64" />
+&lt;par name="filter_cutoff_depth" value="64" />
+&lt;par name="filter_q_depth" value="64" />
+&lt;par name="bandwidth_depth" value="64" />
+&lt;par name="mod_wheel_depth" value="80" />
+&lt;par_bool name="mod_wheel_exponential" value="no" />
+&lt;par_bool name="fm_amp_receive" value="yes" />
+&lt;par_bool name="volume_receive" value="yes" />
+&lt;par_bool name="sustain_receive" value="yes" />
+&lt;par_bool name="portamento_receive" value="yes" />
+&lt;par name="portamento_time" value="64" />
+&lt;par name="portamento_pitchthresh" value="3" />
+&lt;par name="portamento_pitchthreshtype" value="1" />
+&lt;par name="portamento_portamento" value="0" />
+&lt;par name="portamento_updowntimestretch" value="64" />
+&lt;par name="portamento_proportional" value="0" />
+&lt;par name="portamento_proprate" value="80" />
+&lt;par name="portamento_propdepth" value="90" />
+&lt;par name="resonance_center_depth" value="64" />
+&lt;par name="resonance_bandwidth_depth" value="64" />
+&lt;/CONTROLLER>
+&lt;/PART>
+&lt;PART id="10">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="11">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="12">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="13">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="14">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;PART id="15">
+&lt;par_bool name="enabled" value="no" />
+&lt;/PART>
+&lt;SYSTEM_EFFECTS>
+&lt;SYSTEM_EFFECT id="0">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;VOLUME id="0">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="1">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="2">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="3">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="4">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="5">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="6">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="7">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="8">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="9">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="10">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="11">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="12">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="13">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="14">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="15">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;SENDTO id="1">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;SENDTO id="2">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;SENDTO id="3">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;/SYSTEM_EFFECT>
+&lt;SYSTEM_EFFECT id="1">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;VOLUME id="0">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="1">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="2">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="3">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="4">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="5">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="6">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="7">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="8">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="9">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="10">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="11">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="12">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="13">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="14">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="15">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;SENDTO id="2">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;SENDTO id="3">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;/SYSTEM_EFFECT>
+&lt;SYSTEM_EFFECT id="2">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;VOLUME id="0">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="1">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="2">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="3">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="4">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="5">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="6">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="7">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="8">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="9">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="10">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="11">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="12">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="13">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="14">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="15">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;SENDTO id="3">
+&lt;par name="send_vol" value="0" />
+&lt;/SENDTO>
+&lt;/SYSTEM_EFFECT>
+&lt;SYSTEM_EFFECT id="3">
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;VOLUME id="0">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="1">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="2">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="3">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="4">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="5">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="6">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="7">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="8">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="9">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="10">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="11">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="12">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="13">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="14">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;VOLUME id="15">
+&lt;par name="vol" value="0" />
+&lt;/VOLUME>
+&lt;/SYSTEM_EFFECT>
+&lt;/SYSTEM_EFFECTS>
+&lt;INSERTION_EFFECTS>
+&lt;INSERTION_EFFECT id="0">
+&lt;par name="part" value="9" />
+&lt;EFFECT>
+&lt;par name="type" value="7" />
+&lt;par name="preset" value="0" />
+&lt;EFFECT_PARAMETERS>
+&lt;par_no id="0">
+&lt;par name="par" value="91" />
+&lt;/par_no>
+&lt;par_no id="10">
+&lt;par name="par" value="3" />
+&lt;/par_no>
+&lt;par_no id="11">
+&lt;par name="par" value="95" />
+&lt;/par_no>
+&lt;par_no id="12">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="13">
+&lt;par name="par" value="79" />
+&lt;/par_no>
+&lt;par_no id="16">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="17">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="18">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="21">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="22">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="23">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="26">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="27">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="28">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="31">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="32">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="33">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="36">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="37">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="38">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="41">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="42">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="43">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="46">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="47">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="48">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;/EFFECT_PARAMETERS>
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="1">
+&lt;par name="part" value="9" />
+&lt;EFFECT>
+&lt;par name="type" value="7" />
+&lt;par name="preset" value="0" />
+&lt;EFFECT_PARAMETERS>
+&lt;par_no id="0">
+&lt;par name="par" value="67" />
+&lt;/par_no>
+&lt;par_no id="10">
+&lt;par name="par" value="2" />
+&lt;/par_no>
+&lt;par_no id="11">
+&lt;par name="par" value="40" />
+&lt;/par_no>
+&lt;par_no id="12">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="13">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="16">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="17">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="18">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="21">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="22">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="23">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="26">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="27">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="28">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="31">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="32">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="33">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="36">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="37">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="38">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="41">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="42">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="43">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="46">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="47">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;par_no id="48">
+&lt;par name="par" value="64" />
+&lt;/par_no>
+&lt;/EFFECT_PARAMETERS>
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="2">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="3">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="4">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="5">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="6">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;INSERTION_EFFECT id="7">
+&lt;par name="part" value="-1" />
+&lt;EFFECT>
+&lt;par name="type" value="0" />
+&lt;/EFFECT>
+&lt;/INSERTION_EFFECT>
+&lt;/INSERTION_EFFECTS>
+&lt;/MASTER>
+&lt;/ZynAddSubFX-data>
+</config>
+      </configs>
+      <params/>
+      <controllers/>
+      <editor-pos>437,465</editor-pos>
+      <form-pos>0,0</form-pos>
+     </plugin>
+     <audio-output-bus-name></audio-output-bus-name>
+     <audio-output-bus>0</audio-output-bus>
+     <audio-output-auto-connect>1</audio-output-auto-connect>
+    </output-plugins>
+    <output-connects>
+     <connect index="0">
+      <client>128:a2jmidid</client>
+      <port>0:port</port>
+     </connect>
+    </output-connects>
+    <midi-map>
+     <midi-patch channel="9">
+      <midi-bank-sel-method>0</midi-bank-sel-method>
+      <midi-program>0</midi-program>
+     </midi-patch>
+    </midi-map>
+   </midi-bus>
+  </midi-engine>
+ </devices>
+ <tempo-map>
+  <tempo-node frame="12700800" bar="96">
+   <tempo>70</tempo>
+   <beat-type>2</beat-type>
+   <beats-per-bar>4</beats-per-bar>
+   <beat-divisor>2</beat-divisor>
+  </tempo-node>
+  <tempo-node frame="12852000" bar="97">
+   <tempo>60</tempo>
+   <beat-type>2</beat-type>
+   <beats-per-bar>4</beats-per-bar>
+   <beat-divisor>2</beat-divisor>
+  </tempo-node>
+  <tempo-node frame="13028400" bar="98">
+   <tempo>55</tempo>
+   <beat-type>2</beat-type>
+   <beats-per-bar>4</beats-per-bar>
+   <beat-divisor>2</beat-divisor>
+  </tempo-node>
+ </tempo-map>
+ <tracks>
+  <view>
+   <pixels-per-beat>32</pixels-per-beat>
+   <horizontal-zoom>20</horizontal-zoom>
+   <vertical-zoom>100</vertical-zoom>
+   <snap-per-beat>4</snap-per-beat>
+   <edit-head>11262038</edit-head>
+   <edit-tail>11262038</edit-tail>
+  </view>
+  <track type="midi" name="3 right">
+   <properties>
+    <input-bus>Lead</input-bus>
+    <output-bus>Lead</output-bus>
+    <midi-omni>0</midi-omni>
+    <midi-channel>0</midi-channel>
+    <midi-bank-sel-method>0</midi-bank-sel-method>
+    <midi-program>0</midi-program>
+   </properties>
+   <state>
+    <mute>0</mute>
+    <solo>0</solo>
+    <record>0</record>
+    <monitor>0</monitor>
+    <gain>1</gain>
+    <panning>0</panning>
+   </state>
+   <view>
+    <height>72</height>
+    <background-color>#ccffff</background-color>
+    <foreground-color>#667f7f</foreground-color>
+   </view>
+   <controllers/>
+   <clips>
+    <clip name="3">
+     <properties>
+      <name>3</name>
+      <start>0</start>
+      <offset>0</offset>
+      <length>13403551</length>
+      <gain>1</gain>
+      <fade-in type="InQuad">0</fade-in>
+      <fade-out type="OutQuad">0</fade-out>
+     </properties>
+     <midi-clip>
+      <filename>../Documents/MuseScore2/Scores/3.mid</filename>
+      <track-channel>0</track-channel>
+      <revision>0</revision>
+      <editor-pos>0,0</editor-pos>
+     </midi-clip>
+    </clip>
+   </clips>
+   <plugins>
+    <bank>0</bank>
+    <program>0</program>
+    <audio-output-bus-name></audio-output-bus-name>
+    <audio-output-bus>0</audio-output-bus>
+    <audio-output-auto-connect>1</audio-output-auto-connect>
+   </plugins>
+  </track>
+  <track type="midi" name="3 Left">
+   <properties>
+    <input-bus>Lead</input-bus>
+    <output-bus>Lead</output-bus>
+    <midi-omni>0</midi-omni>
+    <midi-channel>0</midi-channel>
+    <midi-bank-sel-method>0</midi-bank-sel-method>
+    <midi-program>0</midi-program>
+   </properties>
+   <state>
+    <mute>0</mute>
+    <solo>0</solo>
+    <record>0</record>
+    <monitor>0</monitor>
+    <gain>1</gain>
+    <panning>0.04</panning>
+   </state>
+   <view>
+    <height>72</height>
+    <background-color>#99ffff</background-color>
+    <foreground-color>#4c7f7f</foreground-color>
+   </view>
+   <controllers/>
+   <clips>
+    <clip name="3">
+     <properties>
+      <name>3</name>
+      <start>0</start>
+      <offset>0</offset>
+      <length>13403551</length>
+      <gain>1</gain>
+      <fade-in type="InQuad">0</fade-in>
+      <fade-out type="OutQuad">0</fade-out>
+     </properties>
+     <midi-clip>
+      <filename>../Documents/MuseScore2/Scores/3.mid</filename>
+      <track-channel>1</track-channel>
+      <revision>0</revision>
+      <editor-pos>0,0</editor-pos>
+     </midi-clip>
+    </clip>
+   </clips>
+   <plugins>
+    <bank>0</bank>
+    <program>0</program>
+    <audio-output-bus-name></audio-output-bus-name>
+    <audio-output-bus>0</audio-output-bus>
+    <audio-output-auto-connect>1</audio-output-auto-connect>
+   </plugins>
+  </track>
+  <track type="midi" name="3 Pad">
+   <properties>
+    <input-bus>Pad</input-bus>
+    <output-bus>Pad</output-bus>
+    <midi-omni>0</midi-omni>
+    <midi-channel>1</midi-channel>
+    <midi-bank-sel-method>0</midi-bank-sel-method>
+    <midi-program>90</midi-program>
+   </properties>
+   <state>
+    <mute>0</mute>
+    <solo>0</solo>
+    <record>0</record>
+    <monitor>0</monitor>
+    <gain>1</gain>
+    <panning>-2.98023e-09</panning>
+   </state>
+   <view>
+    <height>72</height>
+    <background-color>#ffccff</background-color>
+    <foreground-color>#7f667f</foreground-color>
+   </view>
+   <controllers/>
+   <clips>
+    <clip name="3">
+     <properties>
+      <name>3</name>
+      <start>0</start>
+      <offset>0</offset>
+      <length>12684194</length>
+      <gain>1</gain>
+      <fade-in type="InQuad">0</fade-in>
+      <fade-out type="OutQuad">0</fade-out>
+     </properties>
+     <midi-clip>
+      <filename>../Documents/MuseScore2/Scores/3.mid</filename>
+      <track-channel>2</track-channel>
+      <revision>0</revision>
+      <editor-pos>0,0</editor-pos>
+     </midi-clip>
+    </clip>
+   </clips>
+   <plugins>
+    <bank>0</bank>
+    <program>90</program>
+    <audio-output-bus-name></audio-output-bus-name>
+    <audio-output-bus>0</audio-output-bus>
+    <audio-output-auto-connect>1</audio-output-auto-connect>
+   </plugins>
+  </track>
+  <track type="midi" name="3 Drums">
+   <properties>
+    <input-bus>Drums</input-bus>
+    <output-bus>Drums</output-bus>
+    <midi-omni>0</midi-omni>
+    <midi-channel>9</midi-channel>
+    <midi-bank-sel-method>0</midi-bank-sel-method>
+    <midi-program>0</midi-program>
+   </properties>
+   <state>
+    <mute>0</mute>
+    <solo>0</solo>
+    <record>0</record>
+    <monitor>0</monitor>
+    <gain>1</gain>
+    <panning>0</panning>
+   </state>
+   <view>
+    <height>72</height>
+    <background-color>#ccccff</background-color>
+    <foreground-color>#66667f</foreground-color>
+   </view>
+   <controllers/>
+   <clips>
+    <clip name="3">
+     <properties>
+      <name>3</name>
+      <start>0</start>
+      <offset>0</offset>
+      <length>12700732</length>
+      <gain>1</gain>
+      <fade-in type="InQuad">0</fade-in>
+      <fade-out type="OutQuad">0</fade-out>
+     </properties>
+     <midi-clip>
+      <filename>3a-3_Drums-1.mid</filename>
+      <track-channel>3</track-channel>
+      <revision>2</revision>
+      <editor-pos>84,376</editor-pos>
+      <editor-size>840,600</editor-size>
+     </midi-clip>
+    </clip>
+   </clips>
+   <plugins>
+    <bank>0</bank>
+    <program>0</program>
+    <audio-output-bus-name></audio-output-bus-name>
+    <audio-output-bus>0</audio-output-bus>
+    <audio-output-auto-connect>1</audio-output-auto-connect>
+   </plugins>
+  </track>
+ </tracks>
+</session>
+
