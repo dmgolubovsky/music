@@ -39,9 +39,9 @@
 |Rithm|
 |Soundhound|
 |Station Digital|
-|Technics Tracks|
+|Technics Tracks|https://tracks.technics.com/GB/artists/4088126
 |The Overflow|
-|Triplay/MyMusicCloud|
+|Triplay/MyMusicCloud|https://www.emusic.com/artist/rs_4088126/Dmitry-Golubovsky
 |Weyv|
 |World Of Brass|
 |Hmvdigital|
