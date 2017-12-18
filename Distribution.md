@@ -8,11 +8,11 @@
 |Google Play|https://play.google.com/store/music/artist/Dmitry_Golubovsky?id=Ac5bgrtbmhv2ngusr7ilbfhzw4m&hl=en
 |Napster|http://us.napster.com/artist/dmitry-golubovsky
 |TIDAL|https://listen.tidal.com/artist/9326819
-|Shazam|
+|Shazam|https://www.shazam.com/artist/204771716/dmitry-golubovsky#referrer=shz.am
 |Pandora|
-|Beatport|
+|Beatport|https://www.beatport.com/artist/dmitry-golubovsky/657297
 |YouTube Red|
-|7Digital|
+|7Digital|https://us.7digital.com/artist/dmitry-golubovsky
 |Artistxite|
 |Astro Raku|
 |Axwave|
