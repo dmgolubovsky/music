@@ -1,8 +1,8 @@
 |Distributor|URL|
 |:-----------|:---|
-|iTunes|
+|iTunes|https://itunes.apple.com/us/artist/dmitry-golubovsky/1320017239
 |Apple Music|
-|Spotify|
+|Spotify|https://open.spotify.com/artist/0v9IcGnkIY4DjAWH48jLkI
 |Deezer|
 |Amazon|
 |Google Play|
