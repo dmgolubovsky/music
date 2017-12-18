@@ -5,9 +5,9 @@
 |Spotify|https://open.spotify.com/artist/0v9IcGnkIY4DjAWH48jLkI
 |Deezer|
 |Amazon|https://www.amazon.com/s/ref=ntt_srch_drd_B077V7C5P6?ie=UTF8&field-keywords=Dmitry%20Golubovsky&index=digital-music&search-type=ss
-|Google Play|
-|Napster|
-|TIDAL|
+|Google Play|https://play.google.com/store/music/artist/Dmitry_Golubovsky?id=Ac5bgrtbmhv2ngusr7ilbfhzw4m&hl=en
+|Napster|http://us.napster.com/artist/dmitry-golubovsky
+|TIDAL|https://listen.tidal.com/artist/9326819
 |Shazam|
 |Pandora|
 |Beatport|
