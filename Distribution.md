@@ -17,7 +17,7 @@
 |Astro Raku|
 |Axwave|
 |BBM Shop|
-|Beat.no|
+|Beat.no|https://beat.no/artists/104088126
 |CrowdTunes|
 |Deutsche Telekom|
 |FUHU Nabi 2|
@@ -30,7 +30,7 @@
 |Mariposa|
 |Mixtagram|
 |NEC|
-|Onkyo Music|
+|Onkyo Music|https://www.onkyomusic.com/#/US/artist/dmitry-golubovsky
 |Oursound|
 |Pledge Music|
 |Prodigium|
