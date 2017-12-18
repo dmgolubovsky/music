@@ -4,7 +4,7 @@
 |Apple Music|
 |Spotify|https://open.spotify.com/artist/0v9IcGnkIY4DjAWH48jLkI
 |Deezer|
-|Amazon|
+|Amazon|https://www.amazon.com/s/ref=ntt_srch_drd_B077V7C5P6?ie=UTF8&field-keywords=Dmitry%20Golubovsky&index=digital-music&search-type=ss
 |Google Play|
 |Napster|
 |TIDAL|
