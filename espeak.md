@@ -11,3 +11,6 @@ In order to produce singable vocals with a TTS program it is necessary to observ
 
 Suggested command line options for espeak to approximate this behavior:
 `espeak -v -z -g0 -k0 -p0`
+
+## Male and Female Voices
+While little documented, gender and timbre of espeak voice may be adjusted by adding "+d" or "+md" for male voices (where d is a digit 1 to 5) or "+1d" "+fd" for female voices. Thus, -ven-us+1 and -ven-us+m1 are equivalent, and so are -ven-us+12 and -ven-us+f2.
