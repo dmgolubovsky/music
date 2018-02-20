@@ -37,5 +37,5 @@ for female voice.
 |  80   | B3     |       |
 |  75   | Bb3    |       |
 |  70   | A3     |       |
-|  65
 
+So change of 5 in the value of N corresponds aproximately to one semitone.
