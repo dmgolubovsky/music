@@ -26,3 +26,8 @@ for male voice and
 `espeak -v en-us+f4 -z -g0 -k0 -s1 -pN  "ah"`
 
 for female voice.
+
+
+|Male   |Female  |Note   |
+|-------|--------|-------|
+|       |        |       |
