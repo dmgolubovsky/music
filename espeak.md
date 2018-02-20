@@ -23,6 +23,6 @@ Pitch adjustment is acieved using option -pN where N is between 0 and 100, 50 co
 
 for male voice and
 
-`espeak -v en-us+f4 -z -g0 -k0 -s1 -pN  "ah"
+`espeak -v en-us+f4 -z -g0 -k0 -s1 -pN  "ah"`
 
 for female voice.
