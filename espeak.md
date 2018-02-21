@@ -15,7 +15,7 @@ Suggested command line options for espeak to approximate this behavior:
 
 ## Additional Monotonic Voices
 Espeak looks for voice definitions in the directory `/usr/lib/x86_64-linux-gnu/espeak-data/voices`. In order to create monotone voices, 2 additional files have to be created there (may need root access). the files are as shown below.
-### The file for male monotone voice:
+### The file for male monotone voice (mono-male):
 ```
 name mono-male
 language en-us
@@ -25,4 +25,14 @@ pitch 110 110
 roughness 4
 intonation 3
 
+```
+### The file for female monotone voice (mono-female):
+```
+name mono-female
+language en
+gender female
+pitch 220 220
+flutter 0
+roughness 0
+intonation 3
 ```
