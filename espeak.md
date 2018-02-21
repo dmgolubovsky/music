@@ -13,7 +13,7 @@ Suggested command line options for espeak to approximate this behavior:
 
 `espeak -z -g0 -k0`
 
-## Additional Monotonic Voices
+## Additional Monotone Voices
 Espeak looks for voice definitions in the directory `/usr/lib/x86_64-linux-gnu/espeak-data/voices`. In order to create monotone voices, 2 additional files have to be created there (may need root access). the files are as shown below.
 ### The file for male monotone voice (mono-male):
 ```
@@ -43,3 +43,4 @@ Pty Language Age/Gender VoiceName          File          Other Languages
  5  en             F  mono-female          mono-female   
  5  en-us          M  mono-male            mono-male     
 ```
+Central pitch for these foices is set to A2 (male) and A3 (female). Pitch can be adjusted using the -pN command line option where N ranges from 1 to 99 (50 for uncorrected pitch). change N by 5 causes approximately one semitone in pitch shift. This provides for approximately 1.5 octave voice range.
