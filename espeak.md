@@ -36,3 +36,10 @@ flutter 0
 roughness 0
 intonation 3
 ```
+
+After this, the following output can be expected from espeak (relevant fragments shown):
+```
+Pty Language Age/Gender VoiceName          File          Other Languages
+ 5  en             F  mono-female          mono-female   
+ 5  en-us          M  mono-male            mono-male     
+```
