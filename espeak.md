@@ -49,7 +49,8 @@ Central pitch for these foices is set to A2 (male) and A3 (female). Pitch can be
 In this experiment, a sequence of words uttered at a given rate was compared with the generated sequence of clicks at the given musical tempo.
 
 |Tempo|120|100|80|60|
-|Note |---|---|--|--|
+|-----|---|---|--|--|
+|Note |   |   |  |  |
 |1/2  |   |   |  |  |
 |1/4  |   |   |  |  |
 |1/8  |   |   |  |  |
