@@ -50,10 +50,14 @@ In this experiment, a sequence of words uttered at a given rate was compared wit
 
 The command line parameter `s` sets the speech rate. It is shown in the table below for selected tempo and notes.
 
+```
+espeak -vmono-male -z -g0 -k0 -s<N>   "1 1 1 1 1 1 1 1"
+```
+
 |Tempo|120|100|80|60|
 |-----|---|---|--|--|
 |Note |   |   |  |  |
 |1/2  |   |   |  |  |
-|1/4  |   |   |  |  |
-|1/8  |   |   |  |  |
+|1/4  |100|   |  |  |
+|1/8  |180|   |  |  |
 
