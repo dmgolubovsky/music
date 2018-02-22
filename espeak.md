@@ -44,3 +44,13 @@ Pty Language Age/Gender VoiceName          File          Other Languages
  5  en-us          M  mono-male            mono-male     
 ```
 Central pitch for these foices is set to A2 (male) and A3 (female). Pitch can be adjusted using the -pN command line option where N ranges from 1 to 99 (50 for uncorrected pitch). change N by 4 causes approximately one semitone in pitch shift. This provides for approximately 2 octave voice range.
+
+## Mapping Speak Rate to Tempo
+In this experiment, a sequence of words uttered at a given rate was compared with the generated sequence of clicks at the given musical tempo.
+
+|Tempo|120|100|80|60|
+|Note |---|---|--|--|
+|1/2  |   |   |  |  |
+|1/4  |   |   |  |  |
+|1/8  |   |   |  |  |
+
