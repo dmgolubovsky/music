@@ -4,3 +4,8 @@ Here is an example of an espeak wrapper script to generate a sung melody:
 * [mono](https://github.com/dmgolubovsky/music/blob/master/espeak-1018/mono): monotone voice definition used with this script
 * [sound](https://raw.githubusercontent.com/dmgolubovsky/music/master/espeak-1018/espeak-test.mp3): result of this script
 
+If the sound file does not play in the browser, run the command like
+```
+mpv https://raw.githubusercontent.com/dmgolubovsky/music/master/espeak-1018/espeak-test.mp3
+```
+
