@@ -1,0 +1,37 @@
+#! /bin/bash
+
+#say speed pitch text file
+
+function say() {
+	sox -t wav "$4" -r 22050 ".$4"
+	espeak -a 140 -vmono -z -g0 -k0 -s$1 -p$2 "$3" -w /dev/stdout | 
+	sox -q -t wav --combine concatenate ".$4" /dev/stdin -t wav - | 
+	sox -q -t wav /dev/stdin -r 44100 "$4"
+	rm ".$4"
+}
+
+#hush sec _ _ file
+
+function hush() {
+	sox -t wav "$4" -r 22050 ".$4"
+	sox -n -r 22050 -t wav /dev/stdout synth $1 sine 00 | 
+	sox -q -t wav --combine concatenate ".$4" /dev/stdin -t wav - | 
+	sox -q -t wav /dev/stdin -r 44100 "$4"
+	rm ".$4"
+}
+
+sox -n -r 22050 espeak-test.wav synth 0.001 sine 00
+
+# 7 ~ whole tone
+
+#65 = C4
+#50 = Ab3
+
+say 140  65 Tommy  espeak-test.wav
+say 160  68 took   espeak-test.wav
+say 150  65 a  espeak-test.wav
+say 150  58 day  espeak-test.wav
+say 145  54 off espeak-test.wav
+hush 0.36 x x espeak-test.wav
+say 120  37 yesterday  espeak-test.wav
+
